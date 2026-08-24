@@ -1,7 +1,7 @@
-# Ch. 6 — The Governance Roadmap
+# The Governance Roadmap
 
-*Audience: executives/leaders with mandate and org design (Ch. 4-5) who need the build plan. Program
-managers should pair this with Appendix C's item-level checklist (not yet in this knowledge base).*
+*Audience: executives/leaders with mandate and org design (see
+[Building the Governance Function](05-building-the-governance-function.md)) who need the build plan.*
 
 ## Key takeaway
 
@@ -64,11 +64,12 @@ robustness testing** (identify attack vectors per system, adversarial-example te
 testing, poisoning-scenario testing — made a deployment precondition, not a research project); 
 **monitoring infrastructure** (KPIs per system, dashboards for performance/fairness/drift/reliability/
 compliance status, alerting thresholds, real-time anomaly detection for critical systems); **human
-oversight protocols** (training + time/authority + context — the same three conditions from Ch. 5);
-**third-party governance** (AI vendor assessment folded into procurement — this is where DPA/AI-
-addendum terms from Ch. 23 enter operationally); plus parallel **legal/compliance alignment** work
-(EU AI Act readiness if applicable, GDPR Art. 22/DPIA mapping, sector-specific compliance) and
-**training and awareness** with documented completion records.
+oversight protocols** (training + time/authority + context — the same three conditions discussed in
+[Building the Governance Function](05-building-the-governance-function.md)); **third-party governance**
+(AI vendor assessment folded into procurement — this is where DPA/AI-addendum contract terms enter
+operationally); plus parallel **legal/compliance alignment** work (EU AI Act readiness if applicable,
+GDPR Art. 22/DPIA mapping, sector-specific compliance) and **training and awareness** with documented
+completion records.
 
 **Phase 2 deliverables:** complete model docs for all high-risk systems; initial bias-audit reports;
 monitoring dashboards/alerting; trained human reviewers with documented procedures; vendor AI governance
@@ -89,7 +90,8 @@ assessment results; org-wide training completion records.
   completeness, fairness, security.
 - **External audit preparation** — if pursuing ISO 42001 or EU AI Act conformity, readiness assessment
   with a third-party auditor first.
-- **Maturity assessment** — formal scoring against the Ch. 2 maturity model with 12-month targets.
+- **Maturity assessment** — formal scoring against the maturity model in
+  [`../reference/stack-quick-reference.md`](../reference/stack-quick-reference.md) with 12-month targets.
 - **Governance reporting** — quarterly cadence for high-risk, semi-annual for medium; useful metrics:
   % systems in governance inventory (target ~100%), % with documented fairness assessment, % with
   complete/current docs, % incidents detected internally vs. externally, time to resolve compliance

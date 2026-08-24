@@ -1,7 +1,5 @@
 # The AI Governance Stack — Quick Reference
 
-> Source: Ch. 1 (first look) and Ch. 2 (full specification)
-
 ## Why a "stack" instead of the usual principle → policy → committee → annual-audit line
 
 Straight-line governance fails for AI because it was inherited from deterministic IT systems.
@@ -34,7 +32,7 @@ where failure can originate, each with its own owner and its own evidence stream
 3. **Feedback from the top** — Layer 5 audit findings flow back to Layer 1 as the input to the next
    improvement cycle.
 
-## Ownership model (Ch. 2 §2.9)
+## Ownership model
 
 Every layer must have exactly **one PRIMARY owner** with:
 - **Authority** — can halt training / block deployment / trigger rollback / refuse sign-off unilaterally
@@ -46,7 +44,7 @@ A cross-functional ethics/AI committee can *advise* an owner; it cannot *substit
 Chronic ownership gaps: **Layer 3** (falls between "we built the model" and "we consumed an API") and
 **Layer 4** (assigned to uptime-measured SRE, which then never watches model *behavior*).
 
-## Requirement IDs (stable identifiers used across the source manual)
+## Requirement IDs (stable identifiers used across this knowledge base)
 
 Use these verbatim in internal policy docs / audit workpapers so gap analysis is a join, not a
 translation exercise.
@@ -79,7 +77,7 @@ translation exercise.
   circuit-breaker activation frequency (L3); monitoring coverage, mean time to detect (L4); audit
   completion rate, documentation completeness (L5).
 
-## Maturity model (Ch. 2 §2.11)
+## Maturity model
 
 | Level | Name | Characteristics |
 |---|---|---|
@@ -92,7 +90,7 @@ translation exercise.
 **Target:** Level 3 minimum **at all five layers** for high-risk systems (a floor, not an average — the
 weakest layer sets the effective maturity of the whole system); Level 4 for critical infrastructure.
 
-## Applied example: the credit-decision walkthrough (Ch. 1 §1.7)
+## Applied example: the credit-decision walkthrough
 
 A single gradient-boosted credit model, governed vs. ungoverned, illustrates the whole stack:
 

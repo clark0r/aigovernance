@@ -1,8 +1,7 @@
-# Ch. 9 — The GDPR
+# The GDPR
 
 *Audience: lawyers/counsel needing the authoritative legal reference on GDPR as applied to AI.
-Operational depth (DPIA methodology, Art. 22 in practice) lives in Ch. 24; harmonizing GDPR + EU AI Act
-in Ch. 25. Regulation (EU) 2016/679.*
+Regulation (EU) 2016/679.*
 
 ## At a glance
 
@@ -16,7 +15,8 @@ in Ch. 25. Regulation (EU) 2016/679.*
 **Applicability to AI:** the GDPR is technology-neutral, so it governs AI architectures/training methods
 that didn't exist when written. Because the definition of personal data expressly includes
 **inferences**, AI training data *and* the inferences a model draws about people are both squarely in
-scope. Interaction with the EU AI Act is the central EU compliance complexity (see Ch. 25).
+scope. Interaction with the EU AI Act is the central EU compliance complexity — see
+[The EU AI Act](08-eu-ai-act.md).
 
 ## The seven Article 5(1) principles (Tier 2 penalties attach directly to violation)
 
@@ -78,12 +78,12 @@ not a customer-service issue.
 Controller determines purposes/means; processor acts on controller's documented instructions. AI supply
 chains strain the model — a vendor training on customer data for its own model improvement is *not*
 acting as a processor for that activity; joint controllership can arise. Art. 28 DPAs must impose
-processor obligations + subprocessor controls + audit rights (Ch. 23/Appendix F). Four load-bearing
-components: **RoPA** (Art. 30 — DPAs request it in early-stage inquiries; AI training/inference activity
-must be in it); **DPO** designation where Art. 37 requires; **breach notification** (Art. 33, 72hrs to
-the authority; Art. 34, without undue delay to data subjects where high risk — AI systems belong in the
-breach playbook because model inversion/membership inference/training-data exposure are personal-data
-breaches when they succeed, Ch. 35); **transfer mechanisms** (Ch. V, see below).
+processor obligations + subprocessor controls + audit rights. Four load-bearing components: **RoPA**
+(Art. 30 — DPAs request it in early-stage inquiries; AI training/inference activity must be in it);
+**DPO** designation where Art. 37 requires; **breach notification** (Art. 33, 72hrs to the authority;
+Art. 34, without undue delay to data subjects where high risk — AI systems belong in the breach playbook
+because model inversion/membership inference/training-data exposure are personal-data breaches when they
+succeed); **transfer mechanisms** (Ch. V, see below).
 
 ## Article 22 — automated decision-making (the central AI provision)
 
@@ -94,7 +94,8 @@ that produces legal or similarly significant effects.
   algorithmic recommendation doesn't remove a decision from scope — a reviewer who rarely overrides, is
   trained to defer, or lacks authority to decide differently doesn't count. No fixed override percentage
   is specified; build defensible oversight and *document that it operates in fact*. Tests mirror the EU
-  AI Act's Art. 14 conditions (Ch. 8), which is a Ch. 25 harmonization point.
+  AI Act's Art. 14 conditions (see [The EU AI Act](08-eu-ai-act.md)) — harmonizing the two is a
+  recurring compliance task for any org building one program to both.
 - **Exceptions (Art. 22(2)):** necessary for contract performance (does heavy lifting for automated
   credit scoring/resume screening/underwriting); authorized by Union/member-state law with safeguards;
   explicit consent. Special-category data faces stricter Art. 9 conditions even within an exception, and
@@ -137,7 +138,8 @@ exporter-held-key encryption). Honest US-cloud assessments have repeatedly concl
 access can't be fully mitigated for data the provider can read — driving real architecture (EU-hosted
 infra, exporter-held keys, restructured business models). The **EU-US Data Privacy Framework** (2023)
 restored an adequacy pathway; treat it as functioning but contested (a further legal challenge is
-anticipated; the underlying FISA architecture that prompted Schrems II remains in place — see Ch. 12).
+anticipated; the underlying FISA architecture that prompted Schrems II remains in place — see
+[US Communications, Intermediary, and Surveillance Law](../03-legal-us-federal/12-us-communications-intermediary-surveillance.md)).
 AI training pipelines feel this acutely because centralizing training data resists exporter-held-key
 encryption designs.
 

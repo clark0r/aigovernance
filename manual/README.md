@@ -1,67 +1,65 @@
-# AI Governance Knowledge Base
+# AI Governance Knowledge Base — Index
 
-Structured reference notes distilled from *The AI Governance Practitioner's Manual* (Noah M. Kenney,
-Digital 520, 1st ed., 2026) — reorganized here as a navigable Markdown knowledge base rather than a
-verbatim copy of the source text. Facts, definitions, obligation tables, and the organizing frameworks are
-retained; narrative prose has been condensed and paraphrased. The source is a copyrighted commercial
-work ("© 2026 Noah M. Kenney. All rights reserved."); this knowledge base is for internal/personal
-reference use, not redistribution. Always verify current statutory text and regulatory guidance before
-relying on any obligation, threshold, or penalty figure noted here — coverage reflects the source's
-stated currency of **August 2026**.
+Structured reference notes on AI governance, law, and compliance. This README is an **index only** —
+each row below tells you which file to open for a given topic, so a retrieval pass can jump straight to
+the right file instead of loading this whole knowledge base into context. Coverage reflects
+legal/regulatory developments through **August 2026**; verify current statutory text before relying on
+any obligation, threshold, or penalty figure.
 
-## How this is organized
+## The AI Governance Stack (used as a tag throughout the index below)
 
-The source manual is organized **by audience** (a reading-path model), but this knowledge base is
-organized **by subject area** for lookup, since that's more useful once the material is extracted from
-its original chapter sequence. Cross-references to the original chapter numbers are kept in each file's
-front line so you can trace back.
+Five layers every file maps its subject onto — full spec in
+[`reference/stack-quick-reference.md`](reference/stack-quick-reference.md):
 
-```
-manual/
-├── 00-foundation/          Part I — the discipline, the 5-layer Stack, ethics (Ch. 1-3)
-├── 01-executives/          Part II — business case, org design, roadmap, board prep (Ch. 4-7)
-├── 02-legal-eu/            EU AI Act, GDPR, EU digital regulation suite (Ch. 8-10)
-├── 03-legal-us-federal/    US federal privacy, comms, civil rights, infrastructure, sector regulators (Ch. 11-15)
-├── 04-legal-us-state/      US state privacy, biometric/cyber/breach, state AI statutes (Ch. 16-18)
-├── 05-legal-international/ UK, Americas, Asia-Pacific (Ch. 19-20)
-└── reference/               Cross-cutting quick-reference material
-```
+| Layer | Name | Question |
+|---|---|---|
+| L1 | Data Governance | Is the data safe to learn from? |
+| L2 | Model Governance | Is the model sound, fair, non-biased? |
+| L3 | System Integration | Is it wired into the business safely? |
+| L4 | Control & Monitoring | Are we watching it in production? |
+| L5 | Audit & Evidence | Can we prove all of the above? |
 
-## The core organizing idea: the AI Governance Stack
+## File index
 
-Every chapter in the source maps its subject onto a single five-layer framework. See
-[`reference/stack-quick-reference.md`](reference/stack-quick-reference.md) for the full spec. In brief:
+| File | Domain / jurisdiction | Keywords |
+|---|---|---|
+| [`reference/stack-quick-reference.md`](reference/stack-quick-reference.md) | Cross-cutting framework | 5-layer Stack, DG-1…AE-5 requirement IDs, ownership model, maturity model, credit-decision walkthrough |
+| [`reference/penalty-comparison.md`](reference/penalty-comparison.md) | Cross-cutting, all jurisdictions | penalty tables, fine thresholds, private right of action, cure periods |
+| [`reference/glossary.md`](reference/glossary.md) | Cross-cutting | acronyms, defined terms, statutory instrument list by jurisdiction |
+| [`00-foundation/01-discipline-of-ai-governance.md`](00-foundation/01-discipline-of-ai-governance.md) | Foundational | AI definitions, OECD/EU/NIST definitions, risk classification, failure propagation, business case intro, ROI |
+| [`00-foundation/02-ai-governance-stack.md`](00-foundation/02-ai-governance-stack.md) | Foundational | Stack rationale, layer verification criteria, failure modes, maturity transitions |
+| [`00-foundation/03-ethics-and-professional-responsibility.md`](00-foundation/03-ethics-and-professional-responsibility.md) | Foundational | ethics frameworks, consequentialism, deontology, ACM Code of Ethics, NIST AI RMF, ISO 42001, governance culture |
+| [`01-executives/04-business-case-and-roi.md`](01-executives/04-business-case-and-roi.md) | Executive/org | ROI model, compliance cliff, cost of inaction, budget justification |
+| [`01-executives/05-building-the-governance-function.md`](01-executives/05-building-the-governance-function.md) | Executive/org | Chief AI Officer, committee design, org structure, seven core policies, risk classification |
+| [`01-executives/06-governance-roadmap.md`](01-executives/06-governance-roadmap.md) | Executive/org | 12-month build plan, three-phase roadmap, budget/staffing rules, incident response readiness |
+| [`01-executives/07-evolving-landscape-and-board-prep.md`](01-executives/07-evolving-landscape-and-board-prep.md) | Executive/org | board questions, international convergence, ISO 42001, AI safety institutes, frontier model governance |
+| [`02-legal-eu/08-eu-ai-act.md`](02-legal-eu/08-eu-ai-act.md) | EU | EU AI Act, Regulation 2024/1689, risk pyramid, Art. 5 prohibited practices, GPAI, Annex III, Annex IV, conformity assessment |
+| [`02-legal-eu/09-gdpr.md`](02-legal-eu/09-gdpr.md) | EU | GDPR, Art. 22 automated decision-making, DPIA, lawful basis, Schrems II, cross-border transfer, data subject rights |
+| [`02-legal-eu/10-eu-digital-regulation-suite.md`](02-legal-eu/10-eu-digital-regulation-suite.md) | EU | DSA, DMA, NIS2, DORA, Data Act, Cyber Resilience Act, Product Liability Directive, EHDS |
+| [`03-legal-us-federal/11-us-federal-privacy-consumer-protection.md`](03-legal-us-federal/11-us-federal-privacy-consumer-protection.md) | US federal | FTC Act §5, HIPAA, GLBA, FERPA, COPPA, FCRA, ECOA, TCPA, CFAA, Privacy Act 1974, FISMA |
+| [`03-legal-us-federal/12-us-communications-intermediary-surveillance.md`](03-legal-us-federal/12-us-communications-intermediary-surveillance.md) | US federal | VPPA, §230 CDA, ECPA, Wiretap Act, CLOUD Act, EU-US Data Privacy Framework, FISA §702, CAN-SPAM, DPPA |
+| [`03-legal-us-federal/13-civil-rights-and-employment.md`](03-legal-us-federal/13-civil-rights-and-employment.md) | US federal | Title VII, ADEA, GINA, disparate impact, Fair Housing Act, ADA Title III, NLRA, hiring algorithms |
+| [`03-legal-us-federal/14-critical-infrastructure-cybersecurity.md`](03-legal-us-federal/14-critical-infrastructure-cybersecurity.md) | US federal | CIRCIA, NERC CIP, TSA directives, NRC, FAA DO-178C, FERC Order 901, DOD Responsible AI, OT security |
+| [`03-legal-us-federal/15-sector-specific-federal-regulators.md`](03-legal-us-federal/15-sector-specific-federal-regulators.md) | US federal | FDA SaMD, SR 11-7 model risk management, CFPB circulars, EEOC ADA guidance, ACA §1557, NAIC, SEC AI-washing |
+| [`04-legal-us-state/16-comprehensive-state-privacy-laws.md`](04-legal-us-state/16-comprehensive-state-privacy-laws.md) | US state | CCPA/CPRA, VCDPA, CPA, all 20 state comprehensive privacy laws, ADMT, profiling opt-outs, penalties/cure periods |
+| [`04-legal-us-state/17-state-biometric-cyber-breach.md`](04-legal-us-state/17-state-biometric-cyber-breach.md) | US state | BIPA, CUBI, MHMDA, NY SHIELD Act, NY DFS Part 500, Mass. 201 CMR 17, breach notification, biometric consent |
+| [`04-legal-us-state/18-state-ai-statutes.md`](04-legal-us-state/18-state-ai-statutes.md) | US state | Colorado AI Act, Texas TRAIGA, California AB 2013/SB 942/SB 53, NYC Local Law 144, Illinois HB 3773, ELVIS Act, Utah AI Policy Act |
+| [`05-legal-international/19-uk-and-americas.md`](05-legal-international/19-uk-and-americas.md) | UK, Canada, Latin America | UK GDPR, Online Safety Act, Quebec Law 25, PIPEDA, LGPD, Chile Law 21.719, Colombia, Peru, Uruguay, Panama, Ecuador |
+| [`05-legal-international/20-asia-pacific.md`](05-legal-international/20-asia-pacific.md) | Asia-Pacific | China PIPL/DSL/CSL, Generative AI Measures, Japan APPI, South Korea PIPA/AI Basic Act, Singapore PDPA/AI Verify, India DPDP Act |
 
-| Layer | Name | Question | Default owner |
-|---|---|---|---|
-| 1 | Data Governance | Is the data safe to learn from? | Data teams |
-| 2 | Model Governance | Is the model sound, fair, non-biased? | ML / data science |
-| 3 | System Integration | Is it wired into the business safely? | Engineering |
-| 4 | Control & Monitoring | Are we watching it in production? | SRE / risk operations |
-| 5 | Audit & Evidence | Can we prove all of the above? | Compliance / legal |
+## Reading paths by role
 
-**Cascading failure principle:** failures propagate *upward* through the layers and must be fixed at
-their *source* layer — a Layer 1 (data) defect patched at Layer 3 (integration) is compensation, not
-correction.
+- **Executives:** `00-foundation/01-discipline-of-ai-governance.md` → `01-executives/*`
+- **Lawyers/counsel:** `00-foundation/01-02` → `02-legal-eu/*` → `03-legal-us-federal/*` → `04-legal-us-state/*` → `05-legal-international/*`
+- **Engineers/data scientists:** `00-foundation/02-ai-governance-stack.md`
+- **Security professionals:** `00-foundation/02-ai-governance-stack.md` → `03-legal-us-federal/14-critical-infrastructure-cybersecurity.md`
+- **Compliance/audit:** `00-foundation/*` → `01-executives/06-governance-roadmap.md` → domain-specific legal files
 
-## Reference material
+## Coverage gaps
 
-- [`reference/stack-quick-reference.md`](reference/stack-quick-reference.md) — full 5-layer spec, requirement IDs (DG-1…AE-5), maturity model
-- [`reference/penalty-comparison.md`](reference/penalty-comparison.md) — consolidated penalty/threshold table across every regime covered
-- [`reference/glossary.md`](reference/glossary.md) — recurring terms and acronyms
-
-## Reading paths (condensed from source Ch. "Reading Paths by Role")
-
-- **Executives / governance leaders:** `00-foundation/01…` → `01-executives/*`
-- **Lawyers / counsel:** `00-foundation/01-02` → `02-legal-eu/*` → `03-legal-us-federal/*` → `04-legal-us-state/*`
-- **Engineers / data scientists:** `00-foundation/02-ai-governance-stack.md` (Layers 1-3 in detail)
-- **Security professionals:** `00-foundation/02-ai-governance-stack.md` (Layers 3-4) → `03-legal-us-federal/14-critical-infrastructure.md`
-- **Compliance / audit:** `00-foundation/*` → `01-executives/06-governance-roadmap.md` → domain-specific legal files
-
-## Source coverage
-
-The source manual has 46 chapters across 9 parts plus 10 appendices; **this knowledge base currently
-covers Chapters 1–20 (Parts I, II, and III through the Asia-Pacific section)**, which is the portion
-supplied. Parts IV–IX (privacy engineering, technical implementation, security frameworks, compliance
-program build-out, domain playbooks for healthcare/finance/government/GenAI/agents, and the reference
-appendices) are not yet included — add them here as they become available.
+Within Asia-Pacific ([`20-asia-pacific.md`](05-legal-international/20-asia-pacific.md)), only China,
+Japan, South Korea, Singapore, and India have full narrative treatment — Australia, New Zealand,
+Vietnam, Indonesia, Thailand, the Philippines, Malaysia, Hong Kong, and Taiwan are summary-table only.
+Not yet covered anywhere in this knowledge base: privacy engineering, technical implementation, security
+frameworks, compliance program build-out, and domain-specific playbooks (healthcare, finance,
+government, generative AI, agents).

@@ -1,4 +1,4 @@
-# Ch. 3 — Ethics and Professional Responsibility
+# Ethics and Professional Responsibility
 
 *Audience: everyone, especially practitioners making judgment calls the law doesn't settle. Ethics is
 the decision layer that operates wherever regulation is silent, ambiguous, or in conflict.*
@@ -38,11 +38,12 @@ thinking about rights, virtue-ethics about organizational character, care-ethics
 
 **Transparency** — enables autonomy and accountability but has real limits (some systems resist
 explanation; full transparency risks IP/gaming). **Fairness & non-discrimination** — contested;
-different conceptions can conflict (see Ch. 33's formal metrics). **Autonomy** — meaningful control,
-not merely formal options (a nominal appeal channel no one can successfully use satisfies the form and
-violates the principle). **Accountability** — requires clarity of responsibility across multi-party
-systems; the one-owner-per-layer rule (Ch. 2) is the structural answer inside an org. **Privacy** —
-informed consent, authorized purposes, protection against unauthorized access.
+different conceptions can conflict depending on which formal fairness metric is applied. **Autonomy** —
+meaningful control, not merely formal options (a nominal appeal channel no one can successfully use
+satisfies the form and violates the principle). **Accountability** — requires clarity of responsibility
+across multi-party systems; the one-owner-per-layer rule (see
+[The AI Governance Stack](02-ai-governance-stack.md)) is the structural answer inside an org.
+**Privacy** — informed consent, authorized purposes, protection against unauthorized access.
 
 **Common failure pattern:** treating a fairness-vs-accuracy or transparency-vs-security trade-off as a
 technical parameter for engineering to tune. These are value choices — route them to the accountable
@@ -88,12 +89,12 @@ Move the six-step method to where those choices actually get made.
 ## Institutional mechanisms (embedding ethics at scale)
 
 Operationally these live at Control & Monitoring / Audit & Evidence:
-- **AI ethics committees** — valuable review, but cannot be a layer *owner* (Ch. 1). Effectiveness
+- **AI ethics committees** — valuable review, but cannot be a layer *owner*. Effectiveness
   depends on composition, authority, and culture; a committee that can't block a launch, or reviews
   only what teams volunteer, is advisory theater.
 - **Impact assessments** — most effective when they involve affected communities, external review, and
-  genuine willingness to change course. Appendix D template; Ch. 24-25 cover the legally-mandated
-  variants (DPIAs, EU AI Act assessments) a well-designed process satisfies in one pass.
+  genuine willingness to change course. A well-designed process satisfies legally-mandated variants
+  (DPIAs, EU AI Act assessments) in one pass.
 - **Governance policies/standards** — specific enough to guide, flexible enough to fit context; test:
   can an engineer with a concrete question find a concrete answer?
 - **Training with reasoning** — explaining *why* outperforms reciting rules; someone who understands
@@ -107,12 +108,13 @@ Operationally these live at Control & Monitoring / Audit & Evidence:
 ## Domain-specific tensions
 
 - **Facial recognition/surveillance:** privacy vs. public safety vs. non-discrimination — see the
-  Detroit wrongful-arrest cases (Ch. 1).
+  Detroit wrongful-arrest cases discussed in
+  [The Discipline of AI Governance](01-discipline-of-ai-governance.md).
 - **Content moderation:** free expression vs. harm prevention vs. autonomy — not resolvable by technical
   optimization alone.
 - **Predictive policing:** fairness vs. public safety vs. autonomy — biased predictions feed policing
   that targets the same communities disproportionately, feeding the biased data cycle.
-- **Healthcare/diagnosis:** patient welfare/consent/autonomy vs. efficiency/cost containment (Ch. 42).
+- **Healthcare/diagnosis:** patient welfare/consent/autonomy vs. efficiency/cost containment.
 
 ## Governance culture
 
@@ -120,26 +122,27 @@ Four levers: **leadership commitment** (resource allocation and behavior, not st
 ever actually been delayed on a governance finding?); **response to failure** (blameless investigation
 surfaces problems; punishment hides them — in Stack terms, punishment means Layer 4 signals exist but
 never get raised); **training with reasoning**; **hiring and retention** (governance commitment is
-itself a recruiting advantage, per Ch. 1's 1.5-2x turnover-cost figure).
+itself a recruiting advantage, given the 1.5-2x turnover-cost figure discussed in
+[The Discipline of AI Governance](01-discipline-of-ai-governance.md)).
 
 **Common failure pattern:** compliance theater — policies documented, committee minuted, training
 clicked through, none of it implemented in the running systems. Test: pick a high-risk system at
 random and ask for its current model card, last fairness test result, and the name of its human
 reviewer. If any answer takes more than a day, the program is theater.
 
-## Governance across organizational boundaries (Ch. 3 §3.9)
+## Governance across organizational boundaries
 
 - **Vendor-supplied AI:** governance responsibility is shared — the vendor builds responsibly and
   discloses limitations; the purchaser evaluates fit and monitors in its own context. Neither
-  substitutes for the other; the contract makes the split explicit (Ch. 23, Ch. 41).
+  substitutes for the other; the contract makes the split explicit.
 - **Cloud services:** limited visibility into the provider's practices; certifications/audit rights
-  become the practical proxy (Ch. 38, 41).
+  become the practical proxy.
 - **Open source components:** diffuse responsibility — no vendor to hold accountable, so the integrator
   owns evaluation and maintenance.
 - **Supply chain:** every boundary crossing is a Layer 3 integrity checkpoint and a Layer 5 evidence
   question — can you produce your vendor's fairness testing when the regulator asks for yours?
 
-## Comparative frameworks (§3.11)
+## Comparative frameworks
 
 | Framework | Focus | Limitation |
 |---|---|---|

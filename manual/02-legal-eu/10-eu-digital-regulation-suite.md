@@ -1,12 +1,13 @@
-# Ch. 10 — The EU Digital Regulation Suite
+# The EU Digital Regulation Suite
 
-*Audience: lawyers mapping the full EU obligation set beyond the AI Act (Ch. 8) and GDPR (Ch. 9).
-13 instruments that rarely mention "artificial intelligence" in their scope clauses but all reach AI
-systems anyway — an AI-as-a-service offering is simultaneously a data-processing service (Data Act), a
-supply-chain dependency (NIS2), an ICT third-party service (DORA, financial customers), a product with
-digital elements (CRA, when embedded), and a product for strict-liability purposes (revised PLD).*
+*Audience: lawyers mapping the full EU obligation set beyond the [EU AI Act](08-eu-ai-act.md) and
+[GDPR](09-gdpr.md). 13 instruments that rarely mention "artificial intelligence" in their scope clauses
+but all reach AI systems anyway — an AI-as-a-service offering is simultaneously a data-processing
+service (Data Act), a supply-chain dependency (NIS2), an ICT third-party service (DORA, financial
+customers), a product with digital elements (CRA, when embedded), and a product for strict-liability
+purposes (revised PLD).*
 
-## Suite map (penalties as stated in source, verify currency)
+## Suite map (penalties current to August 2026, verify currency)
 
 | Instrument | Regulates | Key dates | Max penalty |
 |---|---|---|---|
@@ -29,7 +30,7 @@ digital elements (CRA, when embedded), and a product for strict-liability purpos
 incident can trigger NIS2 (24hr), DORA (financial entities), CRA (72hr for severe incidents in
 products), AI Act serious-incident reporting, and GDPR breach notification (72hr) simultaneously, each
 to a different authority on a different clock — build **one incident-classification decision tree** with
-every applicable regime pre-mapped (see Ch. 37).
+every applicable regime pre-mapped.
 
 ## Platform and market regulation
 

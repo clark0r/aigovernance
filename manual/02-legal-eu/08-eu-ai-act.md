@@ -1,4 +1,4 @@
-# Ch. 8 — The EU AI Act
+# The EU AI Act
 
 *Audience: lawyers/counsel on any org that develops/deploys AI touching the EU market. Regulation (EU)
 2024/1689.*
@@ -160,8 +160,9 @@ compliance and Art. 10 data-governance analysis rest on an undocumented dependen
 
 Lower caps for SMEs/start-ups. Preserved member-state civil liability + the revised Product Liability
 Directive (extends strict liability to software/AI with disclosure-of-evidence + rebuttable
-presumptions — making the Annex IV file the principal defense asset; see Ch. 10). For orgs with
-meaningful EU revenue, compliance cost is small against market-exclusion risk.
+presumptions — making the Annex IV file the principal defense asset; see
+[The EU Digital Regulation Suite](10-eu-digital-regulation-suite.md)). For orgs with meaningful EU
+revenue, compliance cost is small against market-exclusion risk.
 
 ## Compliance timeline
 

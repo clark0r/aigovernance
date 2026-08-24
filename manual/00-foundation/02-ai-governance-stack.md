@@ -1,6 +1,6 @@
-# Ch. 2 — The AI Governance Stack
+# The AI Governance Stack
 
-*Audience: everyone — "the one chapter no reader should skip." The spine every later chapter cites.*
+*Audience: everyone — the one file no reader should skip. The spine every other file cites.*
 
 > The full layer-by-layer specification (scope, requirements DG-1…AE-5, decision rules, verification
 > criteria, failure modes, ownership model, maturity model) has been consolidated into
@@ -8,7 +8,7 @@
 > content across files. This file covers what that reference doesn't: the *why* behind the design and
 > the verification/failure-mode detail per layer.
 
-## Why straight-line governance fails (§2.1)
+## Why straight-line governance fails
 
 Principle → policy → committee → annual audit was inherited from deterministic IT governance and fails
 structurally for AI: AI is probabilistic, opaque, drifts in production, and produces outputs its
@@ -66,17 +66,18 @@ replaces checkpoints with continuously-running controls at each layer where fail
   logged but never remediated. "If the evidence doesn't exist before the complaint, you are not being
   audited; you are being discovered."
 
-## The maturity-model transitions (§2.11)
+## The maturity-model transitions
 
 - **Level 2 → 3** is the hardest and most valuable transition: policies-that-exist become
-  processes-that-run — this is where the deployment-velocity gains from Ch. 1/4 first appear.
-- **Level 3 → 4** is a measurement problem: instrument already-running processes with the Ch. 2 metrics
-  so effectiveness (not just execution) is visible.
+  processes-that-run — this is where the deployment-velocity gains discussed elsewhere in this
+  knowledge base first appear.
+- **Level 3 → 4** is a measurement problem: instrument already-running processes with this file's
+  metrics so effectiveness (not just execution) is visible.
 - **Level 4 → 5** is an automation problem: wire gates/evidence-generation/monitoring directly into
   dev workflows so compliance becomes a property of the pipeline.
 
 ## Key takeaway
 
-This chapter is the specification the rest of the manual builds on. When any later chapter cites
+This file is the specification the rest of the knowledge base builds on. When any other file cites
 "DG-1" through "AE-5," it's citing the requirement IDs defined here — see the reference file for the
 full list.

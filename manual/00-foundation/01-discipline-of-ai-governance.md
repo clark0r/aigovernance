@@ -1,8 +1,8 @@
-# Ch. 1 — The Discipline of AI Governance
+# The Discipline of AI Governance
 
-*Audience: everyone. This is the shared foundation every other chapter assumes.*
+*Audience: everyone. This is the shared foundation every other file assumes.*
 
-## 1.1 What counts as AI — definitions determine obligations
+## What counts as AI — definitions determine obligations
 
 No universal legal definition of AI exists, and that gap has teeth: whether a system falls inside a
 statutory definition determines whether an entire body of law applies. The first question for any
@@ -45,7 +45,7 @@ risk classification.
 deployed use case. The same underlying model is minimal-risk as an internal search tool and high-risk
 screening job applicants.
 
-## 1.2 Why governance matters — how failures propagate
+## Why governance matters — how failures propagate
 
 Every documented AI failure category maps to a specific Stack-layer failure, which is why the Stack
 exists as an operational rather than philosophical framework:
@@ -56,13 +56,13 @@ exists as an operational rather than philosophical framework:
 | Apple Card | **L2 + L5** (explainability/opacity, not proven discrimination — NYDFS found no fair-lending violation after analyzing ~400k NY applicants; CFPB's $89M order was for dispute-handling failures, not algorithmic bias) | Interpretability + stakeholder-communication mechanisms convert "we believe it's fair" into a demonstrable answer |
 | Facial-recognition wrongful arrests (Robert Williams 2020, Porcha Woodruff 2023, Detroit) | **L3 + L4** | Human-AI interaction design requiring verification before consequential action |
 
-**Cascading failure principle (Ch. 1's version):** failures cascade upward — Layer 1 data failures
+**Cascading failure principle:** failures cascade upward — Layer 1 data failures
 corrupt Layer 2 model outputs, which corrupt Layer 3 integration behavior, which evades Layer 4
 detection (calibrated to *expected*, i.e., already-biased, behavior), which undermines Layer 5
 accountability. Two rules follow: **fix at the source layer**, and **Layer 4 must monitor for signals
 from every layer below it, not just its own.**
 
-### Risk-to-layer mapping (working reference, expanded in Ch. 2)
+### Risk-to-layer mapping (working reference, expanded in [The AI Governance Stack](02-ai-governance-stack.md))
 
 | Risk category | Primary layer | Secondary layer | Control | Failure signal | Escalation |
 |---|---|---|---|---|---|
@@ -73,7 +73,7 @@ from every layer below it, not just its own.**
 | Concentration of power | Control & Monitoring | System Integration | Human oversight, override | Consequential decisions w/o human review | Mandate human-in-the-loop |
 | Feedback-loop amplification | Data | Control & Monitoring | Drift detection, retraining governance | Training-data distribution shift >10% | Retrain with corrected data |
 
-## 1.3 Who is accountable — the stakeholder matrix
+## Who is accountable — the stakeholder matrix
 
 Diffuse accountability ("everyone owns responsible AI") is the primary organizational failure mode —
 nobody owns the bias assessment that never ran. The matrix assigns determinate accountability across
@@ -94,7 +94,7 @@ security/ops (L4), compliance/legal (L5).
 committee can advise; it cannot halt training, block deployment, or trigger rollback — only a named
 individual with that authority and performance accountability can.
 
-## 1.4 The cost of inaction
+## The cost of inaction
 
 The deployment-governance gap is quantified and growing:
 - 72% of organizations have deployed AI in ≥1 business function (up from ~55% in 2023) — McKinsey.
@@ -126,7 +126,7 @@ deadline pressure. Reactive programs run **3-5x** proactive investment (planning
 pre-established governance contain incidents ~40% faster at markedly lower cost (advisory-experience
 benchmark).
 
-## 1.5 The business case and governance ROI
+## The business case and governance ROI
 
 Four ROI dimensions, each mapped to Stack layers:
 1. **Risk reduction value** (L5+L4) — 3-5x governance investment for high-risk systems (planning benchmark).
@@ -143,18 +143,18 @@ costs run multiples higher. **Practitioner note:** lead the internal pitch with 
 fine avoidance — velocity gains are visible in the current fiscal year and land immediately with
 product leadership, whereas fine avoidance is probabilistic and easy to discount.
 
-## 1.6 The Stack — first look
+## The Stack — first look
 
-See [`../reference/stack-quick-reference.md`](../reference/stack-quick-reference.md) for the full spec
-(Ch. 2). Three structural properties: cascading dependency, upward failure propagation, feedback from
+See [`../reference/stack-quick-reference.md`](../reference/stack-quick-reference.md) for the full spec.
+Three structural properties: cascading dependency, upward failure propagation, feedback from
 the top (L5 findings flow back into L1 as continuous improvement).
 
-## 1.7 Applied walkthrough: the AI credit decision system
+## Applied walkthrough: the AI credit decision system
 
 Full worked example — see the "Applied example" section at the bottom of
 [`../reference/stack-quick-reference.md`](../reference/stack-quick-reference.md).
 
 ## Key takeaway
 
-Read Part I, then your role's reading path, then use the rest as a reference shelf. The Stack tells you
-*where* an obligation lands; cross-references tell you where the answer lives.
+Read the foundational material, then your role's reading path, then use the rest as a reference shelf.
+The Stack tells you *where* an obligation lands; cross-references tell you where the answer lives.

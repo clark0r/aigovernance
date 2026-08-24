@@ -1,7 +1,7 @@
 # Cross-Regime Penalty & Threshold Comparison
 
-> Consolidated from the "at a glance" boxes in Ch. 8-20. Figures as stated in source, current to
-> August 2026 — **verify against primary sources before relying on any figure.**
+> Consolidated from the "at a glance" boxes in each regime file in this knowledge base. Figures current
+> to August 2026 — **verify against primary sources before relying on any figure.**
 
 ## Horizontal / general-purpose AI and data protection
 

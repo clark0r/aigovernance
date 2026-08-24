@@ -1,4 +1,4 @@
-# Ch. 4 — The Business Case and Governance ROI
+# The Business Case and Governance ROI
 
 *Audience: executives/board members needing budget, authority, or board attention for a governance
 program — and the CFO/board member deciding whether the numbers justify it.*
@@ -24,7 +24,8 @@ fragmented data practices) must all be remediated simultaneously under deadline 
 **Practitioner note:** the cliff is steepest for *undocumented models*. A model that shipped two years
 ago without a record of its training data, feature selection, or validation results can't be documented
 retroactively at the same quality — the people, data snapshots, and decisions are gone. Start the
-inventory now (Ch. 6, Phase 1).
+inventory now (see the Foundation phase in
+[The Governance Roadmap](06-governance-roadmap.md)).
 
 ## The cost of inaction, quantified
 
@@ -49,7 +50,7 @@ Regula Forensics); 25% of fintechs had a single incident >$1M; projected AI frau
 
 **Cybersecurity/adversarial:** AI incident reports up 56.4% YoY, 233 documented cases in 2024 (Stanford
 AI Index 2025). Data poisoning, model extraction, and prompt injection are documented attack vectors
-requiring specific controls (Ch. 34-35).
+requiring specific controls.
 
 ## The governance gap, in numbers
 
@@ -105,10 +106,10 @@ the program needed for the next.
 
 Multi-jurisdictional exposure *strengthens* the case for one Stack-based program mapped once to each
 regime, rather than state-by-state or country-by-country compliance programs — the only economical
-answer to the patchwork (Ch. 25 for the method, Ch. 16-18 for the US state landscape). Despite differing
-regulatory philosophies (EU prescriptive/risk-tiered, UK principles-based/sectoral, China
-prescriptive+state-directed), the underlying principles converge: transparency, human oversight,
-fairness, accountability, safety.
+answer to the patchwork (see the EU legal files for the mapping method, and the US state files for the
+state-by-state landscape). Despite differing regulatory philosophies (EU prescriptive/risk-tiered, UK
+principles-based/sectoral, China prescriptive+state-directed), the underlying principles converge:
+transparency, human oversight, fairness, accountability, safety.
 
 ## Key takeaway
 
@@ -116,4 +117,4 @@ The question isn't whether to establish governance — it's how quickly, before 
 (regulatory/financial/reputational/operational) exceed the investment. Start with an AI inventory and
 risk classification this quarter; appoint governance leadership with explicit authority and budget;
 prioritize documentation and bias testing for the highest-risk systems; build toward ISO 42001 or NIST
-AI RMF Tier 3 maturity within twelve months (Ch. 6).
+AI RMF Tier 3 maturity within twelve months (see [The Governance Roadmap](06-governance-roadmap.md)).

@@ -1,10 +1,10 @@
-# Ch. 5 — Building the Governance Function
+# Building the Governance Function
 
 *Audience: executives designing the organizational machinery — who leads, who owns what, which
 policies must exist, how committees make decisions that stick, how culture determines whether any of it
 works.*
 
-## Key takeaway (stated up front in source)
+## Key takeaway (stated up front)
 
 Diffuse accountability is the primary structural failure mode. The fix: structure first, then policy,
 then culture. A policy without an owner is a document; an owner without authority is a scapegoat.
@@ -157,5 +157,5 @@ an integrated Stack-based framework is the only efficient way to manage that.
 
 Build in order: accountable leadership with independent reporting/budget → one owner per Stack layer →
 the seven core policies → a committee with real decision authority → the five operational disciplines at
-risk-proportional rigor → continuous culture investment. Ch. 6 sequences all of this into a 12-month
-roadmap.
+risk-proportional rigor → continuous culture investment.
+[The Governance Roadmap](06-governance-roadmap.md) sequences all of this into a 12-month roadmap.

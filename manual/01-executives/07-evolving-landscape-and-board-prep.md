@@ -1,4 +1,4 @@
-# Ch. 7 — The Evolving Landscape and Board-Level Preparation
+# The Evolving Landscape and Board-Level Preparation
 
 *Audience: executives/board members/governance leaders planning beyond the current compliance cycle.*
 
@@ -31,7 +31,8 @@ principles transfers across every regime you'll face.
 **Practical strategy:** plan for *partial* harmonization. Build one program against the convergent
 principles, implement to the strictest applicable standard where regimes merely differ in rigor, and
 isolate genuinely conflicting requirements (fewer than they first appear) as jurisdiction-specific
-modules on the common core (method demonstrated in Ch. 25 for GDPR + EU AI Act).
+modules on the common core (the EU legal files in this knowledge base demonstrate the method for
+harmonizing GDPR and the EU AI Act).
 
 ## The maturing standards ecosystem
 
